@@ -23,5 +23,5 @@ Execute the following commands in terminal
     ```
 - Run the test
     ```shell
-    $ robot test.robot
+    $ robot test\test.robot
     ```
