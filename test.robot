@@ -11,7 +11,7 @@ ${invalid_username}         incorrectUser
 ${invalid_password}         incorrectPassword
 ${url}                      https://practicetestautomation.com/practice-test-login/
 ${browser_name}             Chrome
-${login_error_message}      css:.show
+${login_error_message}      id:error
 ${home_title}               css:.post-title
 
 
@@ -53,7 +53,7 @@ When I fill the login form
     Input Text    css:input[name=username]    ${username}
     Input Password    css:input[name=password]    ${password}
     Click Button    css:button[id=submit]
-    Set Selenium Implicit Wait    5
+    Sleep    2
 
 Then I verify the error message is correct for username
     Element Text Should Be    ${login_error_message}    Your username is invalid!
